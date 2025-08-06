@@ -1,110 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Campground Chronicles | Project Case Study</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(135deg, #10161d, #0d1218, #10161d);
-      background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
-    }
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-white font-sans">
+<body class="bg-black text-white font-sans">
 
-  <header class="py-20 text-center bg-gray-900 bg-opacity-70 backdrop-blur-sm shadow-xl">
-    <div class="container mx-auto px-4">
-      <h1 class="text-6xl font-extrabold text-green-400 mb-4 tracking-wide">Campground Chronicles</h1>
-      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-        A community-driven platform for travelers to share, discover, and review camping sites globally.
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Aditya Ujjawal</h1>
+      <ul class="hidden md:flex gap-6 text-lg">
+        <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+      <a href="static/Resume.pdf" download class="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-md text-sm font-semibold">Download CV</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center pt-24 px-6">
+    <div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Hi, I'm  <span class="text-teal-400">Aditya Ujjawal</span></h1>
+      <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-6">
+       A passionate full-stack developer specializing in the MERN stack. I build robust and scalable web applications, turning innovative ideas into elegant, functional solutions.
       </p>
-      <a href="#" target="_blank" rel="noopener noreferrer"
-         class="inline-block mt-10 px-10 py-4 bg-green-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
-        View Live Project
-      </a>
+      <a href="#projects" class="inline-block bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded-md font-medium">View My Work</a>
     </div>
-  </header>
-       <!-- Project Demo -->
-    <section class="mb-20 text-center">
-      <h2 class="text-3xl text-indigo-400 font-semibold mb-6">Project Demo</h2>
-      <div class="flex justify-center">
-        <iframe 
-          src="https://drive.google.com/file/d/1_LFr4o1ahRQeUv49aNd-VAmRmKZQaHw4/preview" 
-          width="700"
-          height="400"
-          class="rounded-lg border border-gray-700 shadow-lg"
-          allowfullscreen
-        ></iframe>
+  </section>
+  <!-- About Me Section -->
+<!-- <section id="about" class="py-20 px-6 bg-black">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-300 text-lg leading-relaxed">
+      I'm a passionate <span class="text-teal-400 font-medium">Full Stack Web Developer</span> with a strong foundation in the
+      <span class="text-teal-400 font-medium">MERN stack (MongoDB, Express, React, Node.js)</span>. I recently graduated with a degree in Computer Science and have built multiple full-stack projects that showcase my skills in backend and frontend development. I'm driven by curiosity, clean code, and the excitement of building solutions that make a real-world impact.
+    </p>
+    <p class="text-gray-300 text-lg leading-relaxed mt-6">
+      I'm currently looking for opportunities where I can contribute, learn, and grow with a collaborative team. When I'm not coding, I enjoy reading tech blogs, exploring new tools, and building side projects to challenge myself.
+    </p>
+  </div>
+</section> -->
+<!-- About Me + Skills Section -->
+<!-- About Me + Skills Section (Blue Themed) -->
+<!-- About Me + Skills Section (Dark + Blue Themed) -->
+<section id="about" class="py-20 px-6 bg-gray-900 text-gray-200">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-4 text-white">ABOUT ME</h2>
+    <p class="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
+      Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <!-- Left Column -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Get to know me!</h3>
+        <p class="mb-4 text-gray-300">
+          I'm a <strong class="text-blue-400">Full Stack Web Developer</strong> with experience in building dynamic and scalable web apps using the <strong>MERN stack</strong>.
+        </p>
+        <p class="mb-4 text-gray-300">
+          I enjoy working with both frontend and backend technologies, and I'm passionate about solving real-world problems through code.
+        </p>
+        <p class="mb-4 text-gray-300">
+          I also explore <strong class="text-blue-400">data analysis</strong> using Python libraries like <strong>NumPy</strong>, <strong>Pandas</strong>, and <strong>Matplotlib</strong>.
+        </p>
+        <p class="mb-4 text-gray-300">
+          I’m currently open to <strong class="text-blue-400">job opportunities</strong> where I can contribute, grow, and learn.
+          If you have an opportunity that aligns with my skills, <strong>let’s connect!</strong>
+        </p>
+        <a href="#contact" class="inline-block mt-4 bg-teal-600 text-white font-medium py-2 px-6 rounded-lg  hover:bg-purple-700 transition">
+          Contact Me
+        </a>
       </div>
-    </section>
 
-  <main class="container mx-auto px-4 py-16">
-
-    <section class="mb-24 bg-gray-800 bg-opacity-50 p-10 rounded-2xl shadow-xl border border-gray-700">
-      <h2 class="text-4xl font-bold text-green-400 mb-6 border-b-2 border-green-500 inline-block pb-2">Project Overview</h2>
-      <div class="text-gray-200 space-y-8 text-lg leading-relaxed">
-        <p>
-          <strong class="text-green-300">Campground Chronicles</strong> is a dynamic web platform built with the vision of creating a global community for camping enthusiasts. It empowers travelers to share their experiences and discover new destinations, fostering a collaborative and engaging environment.
-        </p>
-        <p>
-          The platform prioritizes user security and authentication. Users can securely register and log in using a robust system that leverages <span class="font-semibold text-green-300">JWT (JSON Web Tokens)</span> for stateless and efficient authorization. This ensures that user data and sessions are protected.
-        </p>
-        <p>
-          Core functionality revolves around user-generated content. Travelers can create detailed posts about camping sites, including descriptions, locations, and essential details. A key feature is the ability to upload images, which are efficiently managed and optimized using the cloud-based service, <span class="font-semibold text-green-300">Cloudinary</span>.
-        </p>
-        <p>
-          Interaction is at the heart of the platform. Users can comment on posts and rate camping sites, providing valuable feedback for the community. The homepage features an integrated map that displays the location of all registered camping sites, allowing for intuitive discovery and exploration.
-        </p>
+      <!-- Right Column: Skills -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-white">My Skills</h3>
+        <div class="flex flex-wrap gap-3">
+          <!-- Example Skill Badge -->
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">HTML</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">CSS</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">JavaScript</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Tailwind</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Bootstrap</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Node.js</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">EJS</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">MongoDB</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">MySQL</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Express</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Git</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">VS Code</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">NumPy</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Pandas</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Matplotlib</span>
+          <span class="bg-gray-800 text-blue-400 px-4 py-2 rounded-md text-sm">Seaborn</span>
+        </div>
       </div>
-    </section>
-
-    <section class="mb-24">
-      <h2 class="text-4xl font-bold text-green-400 mb-8 border-b-2 border-green-500 inline-block pb-2">Tools & Technologies</h2>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">EJS</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Node.js</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Express</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">MongoDB</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">JWT</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Cloudinary</span>
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Git</span>
-
-
-        <span class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Postman</span>
-      </div>
-    </section>
-
-    <section class="flex flex-col md:flex-row gap-6 justify-center">
-      <a href="#" target="_blank" rel="noopener noreferrer"
-         class="flex-1 text-center bg-green-600 text-white px-8 py-4 rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 font-bold text-xl transform hover:scale-105">
-        View Code
-      </a>
-      <a href="index.html"
-         class="flex-1 text-center bg-gray-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-gray-600 transition-all duration-300 font-bold text-xl transform hover:scale-105">
-        Go Back
-      </a>
-    </section>
-
-  </main>
-
-  <footer class="mt-20 py-10 text-center text-gray-400 text-sm bg-gray-900 bg-opacity-70 backdrop-blur-sm">
-    <div class="container mx-auto px-4">
-      &copy; 2025 Campground Chronicles. All rights reserved.
     </div>
+  </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-20 px-6 bg-black">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Education</h2>
+
+    <div class="space-y-10 relative border-l-4 border-teal-500 pl-6">
+
+      <!-- College -->
+      <div class="group hover:bg-gray-800 p-4 rounded-lg transition">
+        <h3 class="text-xl font-semibold text-white">NMAM Institute of Technology</h3>
+        <p class="text-gray-400 text-sm italic">Nitte, Udupi, Karnataka</p>
+        <p class="text-gray-300 mt-2">
+          <strong>Bachelor of Engineering in Computer Science</strong> <br />
+          CGPA: <span class="text-teal-400">8.51 / 10.0</span>
+        </p>
+      </div>
+
+      <!-- Class 12 -->
+      <div class="group hover:bg-gray-800 p-4 rounded-lg transition">
+        <h3 class="text-xl font-semibold text-white">Mother Teresa Vidyapeeth (CBSE)</h3>
+        <p class="text-gray-400 text-sm italic">Muzaffarpur, Bihar</p>
+        <p class="text-gray-300 mt-2">
+          <strong>Higher Secondary Education – Class 12</strong><br />
+          Scored: <span class="text-teal-400">80.2%</span>
+        </p>
+      </div>
+
+      <!-- Class 10 -->
+      <div class="group hover:bg-gray-800 p-4 rounded-lg transition">
+        <h3 class="text-xl font-semibold text-white">North Point Children's School (ICSE)</h3>
+        <p class="text-gray-400 text-sm italic">Muzaffarpur, Bihar</p>
+        <p class="text-gray-300 mt-2">
+          <strong>Secondary Education – Class 10</strong><br />
+          Scored: <span class="text-teal-400">89%</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- My Skills Section -->
+<!-- My Skills Section -->
+
+
+
+
+  <!-- Projects Section -->
+<section id="projects" class="py-20 px-6 bg-gray-900 text-gray-200">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-4 text-teal-500">PROJECTS</h2>
+    <p class="text-center text-gray-500 mb-12 max-w-3xl mx-auto text-white">
+      Here you will find some of the personal that I created with each project containing its own case study.
+    </p>
+
+    <!-- Project Card -->
+    <div class="grid md:grid-cols-2 gap-10 items-center mb-16 ">
+      <!-- Left: Image -->
+      <div>
+        <img src="static/campground chronical.png" alt="Project Screenshot" class="rounded-xl shadow-md">
+      </div>
+
+      <!-- Right: Description -->
+      <div>
+        <h3 class="text-4xl font-bold text-center mb-4 text-teal-500">CampGround Chronicles</h3>
+        <p class="text-gray-600 mb-4 text-white">
+         Campground Chronicles</strong> is a dynamic web platform built with the vision of creating a global community for camping enthusiasts. It empowers travelers to share their experiences and discover new destinations, fostering a collaborative and engaging environment.
+        </p>
+        <a href="project2.html" target="_blank" class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-700 transition">
+          Case Study
+        </a>
+      </div>
+    </div>
+
+    <!-- Duplicate block for another project -->
+    <div class="grid md:grid-cols-2 gap-10 items-center mb-16 ">
+      <!-- Left: Image -->
+      <div>
+        <img src="static/blogverse.png" alt="Project Screenshot" class="rounded-xl shadow-md">
+      </div>
+
+      <!-- Right: Description -->
+      <div>
+        <h3 class="text-4xl font-bold text-center mb-4 text-teal-500">BlogVerse</h3>
+        <p class="text-gray-600 mb-4 text-white">
+              BlogVerse</strong> is a feature-rich, full-stack blogging platform. It is designed to be both a creative hub for authors and an engaging space for readers. The platform provides a secure and intuitive environment for users to register, log in, and manage all aspects of their content.        </p>
+        <a href="project1.html" target="_blank" class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-700 transition">
+          Case Study
+        </a>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+      <!-- Left: Image -->
+      <div>
+        <img src="static//newsweb.png" alt="Project Screenshot" class="rounded-xl shadow-md">
+      </div>
+
+      <!-- Right: Description -->
+      <div>
+        <h3 class="text-4xl font-bold text-center mb-4 text-teal-500">News Web</h3>
+        <p class="text-white-600 mb-4">
+           This website is a dynamic and up-to-date news aggregator built to provide users with a clean and efficient news-reading experience. The platform utilizes a free "News API" to fetch and display the latest headlines and articles on its homepage, complete with relevant thumbnails and brief descriptions.
+        </p>
+        <a href="news.html" target="_blank" class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-700 transition">
+          Case Study
+        </a>
+      </div>
+
+    <!-- Add more project blocks below as needed -->
+     
+
+  </div>
+</section>
+
+
+  <!-- Blogs Section -->
+<!-- Blogs Section -->
+<!-- <section id="blogs" class="py-20 px-6 bg-black text-gray-200">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">My Blogs</h2>
+    <p class="mb-8 text-gray-400 max-w-2xl mx-auto">
+      I write about full stack development, data analysis, and tech tools that interest me.
+    </p>
+
+    <!-- Blog Cards -->
+  
+
+
+
+  <!-- Contact Section
+  <section id="contact" class="py-20 px-6 bg-black">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="text-gray-300 mb-6">Email me at <span class="text-teal-400">your.email@example.com</span></p>
+      <a href="mailto:your.email@example.com" class="bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded-md font-medium">Send Email</a>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-4 border-t border-gray-800">
+    © 2025 Your Name. All rights reserved.
   </footer>
 
 </body>
