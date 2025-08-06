@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlogVerse | Project Case Study</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1f2937, #0f172a, #1f2937);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #e5e7eb; /* text-gray-200 */
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .pill-style {
+      background-color: #374151; /* bg-gray-700 */
+      color: #ffffff; /* text-white */
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px; /* rounded-full */
+      font-size: 0.875rem; /* text-sm */
+      font-weight: 500; /* font-medium */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition-property: background-color, transform;
+      transition-duration: 300ms;
+    }
+    .pill-style:hover {
+      background-color: #4b5563; /* hover:bg-gray-600 */
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="text-gray-200 font-sans">
+
+  <header class="py-20 text-center bg-gray-900 bg-opacity-70 backdrop-blur-sm shadow-xl border-b border-gray-800">
+    <div class="container mx-auto px-4">
+      <h1 class="text-6xl font-extrabold text-green-400 mb-4 tracking-wide">BlogVerse</h1>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+        A comprehensive case study of a full-stack blogging platform.
+      </p>
+      <a href="https://github.com/AdityaUjjawalThakur/project_blog" target="_blank" rel="noopener noreferrer"
+         class="inline-block mt-10 px-10 py-4 bg-green-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+        View Live Project
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-16">
+
+ <section class="mb-20 text-center">
+      <h2 class="text-3xl text-indigo-400 font-semibold mb-6">Project Demo</h2>
+      <div class="flex justify-center">
+        
+        <iframe 
+          src="https://drive.google.com/file/d/1Igz5Ask1eSdC6wOi585Ng_7TX8oZFZeV/preview" 
+          width="700"
+          height="400"
+          class="rounded-lg border border-gray-700 shadow-lg"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="mb-24 p-10 bg-gray-800 bg-opacity-50 rounded-2xl shadow-xl border border-gray-700">
+      <h2 class="text-4xl font-bold text-green-400 mb-6 border-b-2 border-indigo-500 inline-block pb-2">Project Overview</h2>
+      <div class="space-y-8 text-gray-300 text-lg leading-relaxed">
+        <p>
+          <strong class="text-indigo-300">BlogVerse</strong> is a feature-rich, full-stack blogging platform. It is designed to be both a creative hub for authors and an engaging space for readers. The platform provides a secure and intuitive environment for users to register, log in, and manage all aspects of their content.
+        </p>
+        <p>
+          Each user is provided with a personal dashboard to create, edit, publish, and delete blog posts with a seamless experience. The platform includes a powerful rich text editor and supports image uploads, giving creators full control over their work.
+        </p>
+        <p>
+          Beyond creation, authors can access a detailed analytics dashboard to track blog views and reader engagement. Readers can interact with posts by liking and leaving comments. An exclusive admin panel ensures site-wide management and user permissions, maintaining a safe and well-moderated community.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-24">
+      <h2 class="text-4xl font-bold text-green-400 mb-8 border-b-2 border-indigo-500 inline-block pb-2">Tools & Technologies</h2>
+      <div class="flex flex-wrap gap-4 justify-center">
+       <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">EJS</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Node.js</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Express</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">MongoDB</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">JWT</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Cloudinary</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Git</span>
+        <span class="bg-green-700 text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors duration-300 hover:bg-blue-700">Postman</span>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-6 justify-center">
+      <a href="https://github.com/AdityaUjjawalThakur/project_blog" target="_blank" rel="noopener noreferrer"
+         class="flex-1 text-center bg-green-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 font-bold text-xl transform hover:scale-105">
+        View Code
+      </a>
+      <a href="index.html"
+         class="flex-1 text-center bg-gray-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-gray-600 transition-all duration-300 font-bold text-xl transform hover:scale-105">
+        Go Back
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="mt-20 py-10 text-center text-gray-400 text-sm bg-gray-900 bg-opacity-70 backdrop-blur-sm border-t border-gray-800">
+    <div class="container mx-auto px-4">
+      &copy; 2025 Aditya Ujjawal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
